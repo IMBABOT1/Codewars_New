@@ -1,6 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(MakeNegative.makeNegative(42));
+        System.out.println(Digitize.digitize(35231));
     }
 }
