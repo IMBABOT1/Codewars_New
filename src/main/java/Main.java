@@ -1,6 +1,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Digitize.digitize(35231));
+        ShortestWord.findShort("bitcoin take over the world maybe who knows perhaps");
     }
 }
