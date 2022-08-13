@@ -4,6 +4,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(FilterList.filterList(new ArrayList<>(Arrays.asList(1, 2, "a", "b"))));
+        System.out.println(DuplicateEncoder.encode("recede" ));
     }
 }
