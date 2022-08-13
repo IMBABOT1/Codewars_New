@@ -3,6 +3,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        TowerBuilder.towerBuilder(3);
+        System.out.println(CalculateBMI.bmi(80, 1.80));
     }
 }
