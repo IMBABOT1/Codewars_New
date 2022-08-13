@@ -1,8 +1,9 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(CalculateBMI.bmi(80, 1.80));
+        System.out.println(FilterList.filterList(new ArrayList<>(Arrays.asList(1, 2, "a", "b"))));
     }
 }
