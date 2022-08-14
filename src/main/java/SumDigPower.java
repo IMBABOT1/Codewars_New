@@ -4,22 +4,51 @@ import java.util.List;
 
 public class SumDigPower {
 
-    public static List<Long> sumDigPow(long a, long b) {
-        String s = String.valueOf(a);
+    private static void checkResult(Long[] array, Long value) {
+        String s = String.valueOf(value);
         String[] arr = s.split("");
         Long[] temp = new Long[arr.length];
-        double[] d = new double[arr.length];
+        int[] d = new int[arr.length];
+        int sum = 0;
+        int result = 0;
+        long v = 0;
 
 
-        for (int i = 0; i < temp.length ; i++) {
+
+
+        for (int i = 0; i < temp.length; i++) {
             temp[i] = Long.valueOf(arr[i]);
         }
 
+
         for (int i = 0; i < temp.length; i++) {
-            d[i] = Math.pow(temp[i], i+1);
+            d[i] = (int) Math.pow(temp[i], i + 1);
         }
 
-        System.out.println(Arrays.toString(d));
+        for (int i = 0; i < d.length; i++) {
+            sum += d[i];
+        }
+        result = (int) (value - sum);
+
+        if (result == 0){
+            v = value;
+        }
+
+       // System.out.println(v);
+    }
+
+
+    public static List<Long> sumDigPow(long a, long b) {
+        Long[] arr = new Long[(int) b];
+
+        for (long i = 0; i < arr.length ; i++) {
+            arr[(int) i] = i + 1;
+            checkResult(arr, arr[(int) i]);
+        }
+
+
+
+
 
         return new ArrayList<>();
     }
