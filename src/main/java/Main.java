@@ -1,9 +1,10 @@
+import javax.xml.transform.sax.SAXSource;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Feast.feast("great blue heron","garlic nann"));
+        System.out.println(SupermarketQueue.solveSuperMarketQueue(new int[] {6,2,7,4,4}, 2));
     }
-}
+ }
