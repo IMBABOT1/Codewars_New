@@ -12,9 +12,6 @@ public class SumDigPower {
         long v = 0;
 
 
-
-
-
         for (int i = 0; i < temp.length; i++) {
             temp[i] = Long.valueOf(arr[i]);
         }
@@ -25,7 +22,6 @@ public class SumDigPower {
         }
 
 
-
         for (int i = 0; i < d.length; i++) {
             sum += d[i];
         }
@@ -34,32 +30,26 @@ public class SumDigPower {
         result = (int) (value - sum);
 
 
-        if (result == 0 ) {
+        if (result == 0) {
             v = value;
         }
 
 
-       return v;
+        return v;
     }
 
 
     public static List<Long> sumDigPow(long a, long b) {
         long length = b - a + 1;
 
-        Long[] arr = new Long[(int) length];
+        List<Long> list = new ArrayList<>();
         List<Long> result = new ArrayList<>();
 
-        System.out.println(a);
-        System.out.println(b);
 
-
-
-
-        for (long i = a; i < length ; i++) {
-            arr[(int) i] = i;
-
-            if (checkResult(arr[(int) i]) != 0){
-                result.add(checkResult(arr[(int) i]));
+        for (long i = 0; i < length; i++) {
+            list.add(i + a);
+            if (checkResult(list.get((int) i)) != 0) {
+                result.add(checkResult(list.get((int) i)));
             }
         }
 
