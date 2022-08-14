@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class SumDigPower {
 
-    private static void checkResult(Long[] array, Long value) {
+    private static long checkResult(Long value) {
         String s = String.valueOf(value);
         String[] arr = s.split("");
         Long[] temp = new Long[arr.length];
@@ -12,6 +10,7 @@ public class SumDigPower {
         int sum = 0;
         int result = 0;
         long v = 0;
+
 
 
 
@@ -25,31 +24,45 @@ public class SumDigPower {
             d[i] = (int) Math.pow(temp[i], i + 1);
         }
 
+
+
         for (int i = 0; i < d.length; i++) {
             sum += d[i];
         }
+
+
         result = (int) (value - sum);
 
-        if (result == 0){
+
+        if (result == 0 ) {
             v = value;
         }
 
-       // System.out.println(v);
+
+       return v;
     }
 
 
     public static List<Long> sumDigPow(long a, long b) {
-        Long[] arr = new Long[(int) b];
+        long length = b - a + 1;
 
-        for (long i = 0; i < arr.length ; i++) {
-            arr[(int) i] = i + 1;
-            checkResult(arr, arr[(int) i]);
+        Long[] arr = new Long[(int) length];
+        List<Long> result = new ArrayList<>();
+
+        System.out.println(a);
+        System.out.println(b);
+
+
+
+
+        for (long i = a; i < length ; i++) {
+            arr[(int) i] = i;
+
+            if (checkResult(arr[(int) i]) != 0){
+                result.add(checkResult(arr[(int) i]));
+            }
         }
 
-
-
-
-
-        return new ArrayList<>();
+        return result;
     }
 }
