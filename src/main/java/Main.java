@@ -4,6 +4,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(FakeBinary.fakeBin("45385593107843568"));
+        System.out.println(DoubleChar.doubleChar("Hello World"));
     }
 }
