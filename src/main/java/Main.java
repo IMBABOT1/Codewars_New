@@ -5,6 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(SupermarketQueue.solveSuperMarketQueue(new int[] {2, 2, 3, 3, 4, 4}, 2));
+        SmashWords.smash(new String[] { "Bilal", "Djaghout" });
     }
  }
