@@ -5,6 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(Sum.GetSum(0, -1));
+        System.out.println(NumberFun.findNextSquare(121));
     }
  }
