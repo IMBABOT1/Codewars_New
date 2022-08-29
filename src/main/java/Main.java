@@ -5,6 +5,6 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(PowersOfTwo.powersOfTwo(4));
+        System.out.println(MixedSum.sum(Arrays.asList(9, 3, "7", "3")));
     }
  }
