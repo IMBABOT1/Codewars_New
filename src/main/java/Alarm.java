@@ -9,6 +9,7 @@ public class Alarm {
         }else if (employed && !vacation){
             return true;
         }
+        System.out.println();
         return false;
     }
 }
