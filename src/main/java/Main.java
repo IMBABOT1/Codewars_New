@@ -1,9 +1,7 @@
-import javax.xml.transform.sax.SAXSource;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
+        CharProblem.howOld("5 years old");
     }
  }
