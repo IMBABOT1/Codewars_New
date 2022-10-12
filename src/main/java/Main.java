@@ -2,6 +2,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        StringUtils.toAlternativeString("ALTerNAtiNG CaSe <=> altERnaTIng cAsE");
+        System.out.println(RepeatStr.repeatStr(4, "a"));
     }
  }
