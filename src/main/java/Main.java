@@ -2,6 +2,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        Between.between(-2, 2);
+        StringUtils.toAlternativeString("ALTerNAtiNG CaSe <=> altERnaTIng cAsE");
     }
  }
