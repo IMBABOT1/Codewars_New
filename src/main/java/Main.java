@@ -2,6 +2,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(WideMouthedFrog.mouthSize("alligator"));
+        System.out.println(ProdFib.productFib(5895));
     }
 }
