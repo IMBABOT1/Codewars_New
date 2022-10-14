@@ -3,8 +3,9 @@ import java.util.List;
 
 public class ProdFib {
     public static long[] productFib(long prod) {
-        long[] result = new long[2];
+        long[] result = new long[3];
 
+        System.out.println(prod);
 
         int a;
         int b = 0;
@@ -24,7 +25,9 @@ public class ProdFib {
             c = a + b;
             list.add(c);
         }
+
         int index = 0;
+
         while (sum <= prod) {
             if (index == list.size() - 1) {
                 break;
@@ -34,20 +37,21 @@ public class ProdFib {
             if (first * second == prod) {
                 firstIndex = index - 1;
                 secondIndex = index;
+                result[0] = list.get(firstIndex + 1);
+                result[1] = list.get(secondIndex + 1);
+                result[2] = 1;
                 break;
             } else if (first * second > prod) {
                 firstIndex = index - 1;
                 secondIndex = index;
+                result[0] = list.get(firstIndex + 1);
+                result[1] = list.get(secondIndex + 1);
+                result[2] = 0;
                 break;
             }
             index++;
         }
-        System.out.println(firstIndex);
-        System.out.println(secondIndex);
 
-        System.out.println(result);
-
-
-        return null;
+        return result;
     }
 }
