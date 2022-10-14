@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -6,7 +7,6 @@ public class DataReverse {
     public static int[] DataReverse(int[] data) {
         int firstDimension = data.length / 8;
         int secondDimension = 8;
-        int[] result = new int[data.length];
         int[][] arr = new int[firstDimension][secondDimension];
         int i = 0;
 
@@ -23,17 +23,10 @@ public class DataReverse {
             arr[arr.length - j - 1] = temp;
         }
 
-
-        for (int j = 0; j < arr.length ; j++) {
-            for (int k = 0; k < arr[j].length ; k++) {
-                result[k] = arr[j][k];
-            }
-        }
-
-        int[] array = Stream.of(arr)
+        data  = Stream.of(arr)
                 .flatMapToInt(IntStream::of)
                 .toArray();
 
-        return array;
+        return data;
     }
 }

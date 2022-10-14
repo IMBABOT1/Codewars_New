@@ -2,6 +2,6 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(DataReverse.DataReverse(new int[]{1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0}));
+        System.out.println(ArrayPrinter.printArray(new Integer[]{1,2,3,4}));
     }
 }
