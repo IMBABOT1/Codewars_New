@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ProdFib {
@@ -18,6 +19,7 @@ public class ProdFib {
         int firstIndex = 0;
         int secondIndex = 0;
 
+        StringBuilder sb = new StringBuilder();
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < prod; i++) {
             a = b;
