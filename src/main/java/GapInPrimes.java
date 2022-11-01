@@ -5,7 +5,7 @@ public class GapInPrimes {
 
     public static long[] gap(int g, long m, long n) {
         List<Long> numbers = new ArrayList<>();
-        List<Long> primes = new ArrayList<>()
+        List<Long> primes = new ArrayList<>();
 
 
         for (long i = m; i <= n; i++) {
